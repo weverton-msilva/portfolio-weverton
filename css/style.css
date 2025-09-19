@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --shandow-borde: 0px 5px 5px #000000;
+    --background-body: #ffffff;
+    --background-card: #D3D3D3;
+    --color-title: #0091ff;
+    --color-text: #000000;
+}
+
+html,
+body {
+    font-family: "roboto", sans-serif;
+    background-color: var(--background-body);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border-bottom: solid 2px #000000;
+    background-color: var(--background-body);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header nav {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+header nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    gap: 2em;
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+    color: var(--color-title);
+}
+
+header nav .actions {
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+
+header nav .actions button {
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 1em;
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+}
+
+/* PARTE REFERENTE A TODO CONTEÙDO DO MAIN */
+main {
+    min-height: 100vh;
+    max-width: 1920px;
+    position: absolute;
+    width: 100%;
+    top: 4.5em;
+}
+
+main a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+main h3 {
+    font-size: 30px;
+    margin-top: 3em;
+}
+
+main .page {
+    background-color: rgb(94, 255, 0);
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 2em;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+main .page .content {
+    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+main .page .content .information h1 {
+    font-size: 50px;
+    max-width: 500px;
+}
+
+main .page .content .information h4 {
+    color: var(--color-title);
+    font-size: 30px;
+}
+
+main .page .content .information a {
+    background-color: var(--color-title);
+    box-shadow: var(--shandow-borde);
+    border: solid 1px #000000;
+    justify-content: center;
+    color: var(--background-body);
+    border-radius: 20px;
+    max-width: 200px;
+    display: flex;
+    padding: 0.5em;
+    width: 100%;
+}
+
+main .page .content .information a:hover {
+    box-shadow: none;
+    background-color: #005eff;
+    border-color: #ffffff;
+}
+
+main .page .content .information a p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main .page .content .perfil {
+    box-shadow: var(--shandow-borde);
+    border-radius: 100%;
+    max-width: 500px;
+    transition: 1.0s;
+    width: 100%;
+}
+
+main .page .content .perfil:hover {
+    transform: scale(1.1);
+}
