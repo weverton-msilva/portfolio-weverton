@@ -2,9 +2,9 @@
 
 :root {
     --shandow-borde: 0px 5px 5px #000000;
-    --background-body: #ffffff;
+    --background-body: #FFE4E1;
     --background-card: #D3D3D3;
-    --color-title: #0091ff;
+    --color-title: #8B4513;
     --color-text: #000000;
 }
 
@@ -88,23 +88,24 @@ main a {
 
 main h3 {
     font-size: 30px;
-    margin-top: 3em;
+}
+
+main p {
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 main .page {
-    background-color: rgb(94, 255, 0);
     justify-content: center;
     flex-direction: column;
     padding-inline: 2em;
     align-items: center;
-    height: 100vh;
     display: flex;
 }
 
 main .page .content {
-    background-color: red;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     padding: 2em;
     display: flex;
     height: 100%;
@@ -136,7 +137,7 @@ main .page .content .information a {
 
 main .page .content .information a:hover {
     box-shadow: none;
-    background-color: #005eff;
+    background-color: #800000;
     border-color: #ffffff;
 }
 
@@ -155,4 +156,15 @@ main .page .content .perfil {
 
 main .page .content .perfil:hover {
     transform: scale(1.1);
+}
+
+main .page .content .introduction {
+    max-width: 600px;
+    text-align: justify;
+    padding-inline: 2em;
+    font-size: 18px;
+}
+
+main .page .content .introduction ul {
+    list-style: none;
 }
